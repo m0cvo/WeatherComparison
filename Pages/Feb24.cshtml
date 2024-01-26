@@ -1,0 +1,44 @@
+﻿@page
+@model WeatherComparison.Pages.Feb24Model
+@{
+    ViewData["Title"] = "February 2024";
+}
+
+<!DOCTYPE html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<html>
+
+<body>
+
+    <canvas id="myChart" style="width:100%;max-width:800px"></canvas>
+
+    <script>
+        const xValues = ["Day", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20",
+            "21", "22", "23", "24", "25", "26", "27", "28", "29"];
+        const yValues = [0, ];
+        const barColors = "Indigo";
+
+        new Chart("myChart", {
+            type: "bar",
+            data: {
+                labels: xValues,
+                datasets: [{
+                    backgroundColor: barColors,
+                    data: yValues
+                }]
+            },
+            options: {
+                legend: { display: false },
+                title: {
+                    display: true,
+                    text: "Temperature range comparison February 2024"
+                }
+            }
+        });
+    </script>
+    <p>
+        The chart on this page demonstrates the trend of the temperature in Celsius each morning at the same time (06:30 UTC) across a period of one month.
+    </p>
+</body>
+</html>
+
