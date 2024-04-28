@@ -6,20 +6,4 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Content Remove="Pages\May24.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="Pages\May24.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <_ContentIncludedByDefault Remove="Pages\May24.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Pages\May24.cshtml" />
-  </ItemGroup>
-
 </Project>
