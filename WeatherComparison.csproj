@@ -11,4 +11,8 @@
     <Content Include="Mogpie-1.ico" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Pages\2026\" />
+  </ItemGroup>
+
 </Project>
